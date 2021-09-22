@@ -1,0 +1,95 @@
+.addBlock {
+    height: 60px;
+    background: #4f4f4f;
+    .addBlock__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        .phoneNumber {
+            color: #FFFFFF;
+            font-size: 22px;
+            opacity: 0.8;
+            cursor: pointer;
+            transition: 200ms all;
+            &:hover {
+                opacity: 1;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+        .languageBlock {
+            
+            position: relative;
+            height: 35px;
+            // &:hover {
+            //     box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+            // }
+            .active__language {
+                border: 1px solid #000000;
+                top: 0;
+                width: 200px;
+                right: 0;
+                display: flex;
+                padding: 0 15px;
+                align-items: center;
+                justify-content: space-between;
+                height: 100%;
+                border-radius: 20px;
+                background: transparent;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .language__popup {
+                position: absolute;
+                top: 37px;
+                left: 0;
+                right: 0;
+                border-radius: 25px;
+                background-color: white;
+                align-items: center;
+                flex-direction: column;
+                display: none;
+                z-index: 11;
+                overflow: hidden;
+                li {
+
+                    transition: 200ms all;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px 15px;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover {
+                        background: rgba(0,0,0,0.2);
+                    }
+                }
+                li:nth-child(2) {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0.5px;
+                        background: rgba(0,0,0,0.5);
+                        width: 100%;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0.5px;
+                        background: rgba(0,0,0,0.5);
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
