@@ -11,7 +11,7 @@ export const fetchPizzas = () => {
         try {
             dispatch({
                 type: PizzaActionTypes.FETCH_PIZZAS})
-            const { data } = await axios("http://localhost:3001/pizzas");
+            const { data } = await axios("/pizzas");
             dispatch({
                 type: PizzaActionTypes.FETCH_PIZZAS_SUCCESS, 
                 payload: data})
