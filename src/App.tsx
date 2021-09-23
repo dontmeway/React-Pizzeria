@@ -33,6 +33,7 @@ export const App = () => {
       <AddBlock />
       <Header cart = {cart} totalAmount = {cart.totalAmount} totalPrice = {cart.totalPrice} />
       <Route path = "/" exact>
+        <Swiper />
         <SortPopup setQuery = {setQuery} query = {query}/>
         <Home cart = {cart} query = {query} pizzas = {pizzas} isLoading = {isLoading} />
       </Route>

@@ -19,6 +19,12 @@ export const RemoveFromCartAction = (value: string) => {
     }
 }
 
+export const RemoveFullItem = (value: string) => {
+    return {
+        type: CartActionTypes.REMOVE_FULL_ITEM,
+        payload: value
+    }
+}
 
 
 

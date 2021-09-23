@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { AddToCartAction, RemoveFromCartAction } from '../store/actions/cart'
+import { AddToCartAction, RemoveFromCartAction, RemoveFullItem} from '../store/actions/cart'
 
 const sizeTypes = ["Маленькая", "Средняя", "Большая"]
 const categoryTypes = ["Стандарт", "Тонкое"]
@@ -15,6 +15,7 @@ function CartPopupItem({size, amount, title, price, type, id, initialPrice}: any
     }
 
     const handleRemoveFull = () => {
+        dispatch(RemoveFullItem(id))
         
     }
 
