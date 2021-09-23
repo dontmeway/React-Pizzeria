@@ -32,7 +32,8 @@ function Cart({cart}: any) {
             <div>
                 <div className = "cartOrders__wrapper">
                     <h1 className = "m-5">Ваш заказ:</h1>
-                        {pizzas.map((item: any) => <CartItem 
+                        {pizzas.map((item: any) => <CartItem
+                                                        key = {item[0].currentId} 
                                                         id = {item[0].currentId}
                                                         title = {item[0].title}
                                                         initialPrice = {item[0].currentPrice}

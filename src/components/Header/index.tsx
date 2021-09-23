@@ -66,6 +66,7 @@ const Header = ({totalAmount, totalPrice, cart}: HeaderProps) => {
                             "activeCartList": popup && totalAmount > 0
                         })}>
                             {cartItems.map((item: any ) => <CartPopupItem
+                                                                key = {item[0].currentId}
                                                                 id = {item[0].currentId}
                                                                 title = {item[0].title}
                                                                 initialPrice = {item[0].currentPrice}

@@ -58,13 +58,14 @@ function PizzaCard({title, image, body, price, sizes, types, id, count}: Props) 
             </div>
             <div className = {cl.sizes}>
                 {sizeTypes.map((size, index) => 
-                <span onClick = {() => handleSetSize(index)} className = {index === activeSize ? "activeType" : ""}>
+                <span key = {index} onClick = {() => handleSetSize(index)} className = {index === activeSize ? "activeType" : ""}>
                     {size}
                 </span>)}
             </div>
             <div className = {cl.types}>
                 {categoryTypes.map((item, index) => 
-                    <span 
+                    <span
+                        key = {index} 
                         onClick = {() => handleSetType(index)}
                         className = {classNames({
                         activeType: index === activeType,
