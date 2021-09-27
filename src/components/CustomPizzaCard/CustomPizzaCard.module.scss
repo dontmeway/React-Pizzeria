@@ -1,0 +1,122 @@
+.pizzaCard {
+    max-width: 315px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    padding: 10px;
+    transition: 200ms all;
+    margin: 15px 0;
+    &:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        img {
+            transform: scale(1.02)
+        }
+    }
+    img {
+        transition: 100ms all;
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 15px;
+    }
+    .titleBody {
+        height: 85px;
+        h5 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 14px;
+            color: rgba(0,0,0,0.7)
+        }
+    }
+        .sizes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        background-color: #f8f8f8;
+        border: 1px solid rgba(0,0,0,.08);
+        margin-bottom: 10px;
+        span {
+            padding: 5px 0;
+            width: 33.3333333%;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            transition: 200ms all;
+        }
+    }
+    .types {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        span {
+            width: 48%;
+            font-size: 14px;
+            padding: 5px 0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            transition: 200ms all;
+            background-color: #e9e9e99c;
+            cursor: pointer;
+        }
+    }
+    .pizzaCard__bottom {
+        p {
+            font-size: 14px;
+            span {
+                margin: 0 5px 0 10px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+        }
+    }
+}
+.buttons {
+    width: 145px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 15px;
+    background: #f8f8f8;
+    height: 50px;
+}
+span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 15px;
+    background: #f8f8f8;
+    transition: 100ms all;
+    &:hover {
+        background: #fff
+    }
+}
+.order__btn {
+    width: 145px;
+    outline: 0;
+    border: 0;
+    background-color: #e31837;
+    border-radius: 15px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 15px;
+    transition: 150ms all;
+    height: 50px;
+    &:hover {
+        background-color: #bf142e;
+    }
+}

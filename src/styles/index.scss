@@ -308,3 +308,170 @@ ul {
     margin-right: 15px;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    botto: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .customPage {
+        position: relative;
+        width: 880px;
+        height: 700px;
+        background: white;
+        border-radius: 15px;
+        z-index: 20;
+        padding: 20px;
+        i {
+            position: absolute;
+            font-size: 28px;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+        overflow-y: scroll;
+        .leftSide {
+            h3 {
+                font-size: 20px;
+                text-align: center;
+                margin-bottom: 20px;
+                width: 80%;
+            }
+            width: 60%;
+            .customCards {
+                .customCard {
+                    cursor: pointer;
+                    width: 138px;
+                    padding: 2px;
+                    margin: 0 10px 10px 0;
+                    &:hover {
+                        .customCard__img {
+                            transform: translateY(-5px)
+                        }
+                    }
+                    .customCard__img {
+                        transition: 200ms all;
+                        position: relative;
+                        .left_side {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            width: 50%;
+                            background: white;
+                            opacity: 0.8;
+                            visibility: hidden;
+                            &.active {
+                                visibility: visible;
+                            }
+                        }
+                        .right_side {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            width: 50%;
+                            background: white;
+                            opacity: 0.8;
+                            visibility: hidden;
+                            &.active {
+                                visibility: visible;
+                            }
+                        }
+                        &.active {
+                            border: 1px solid orange;
+                            border-radius: 8px;
+                            margin-bottom: 10px;
+                            padding: 5px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                    }
+                    p { 
+                        font-size: 12px;
+                        margin-bottom: 0;
+                    }
+    
+                }
+            }
+        }
+        .rightSide {
+            .rightSide__pizza {
+                position: relative;
+                .rightSide__leftPizza {
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                    width: 50%;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+                .rightSide__rightPizza {
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                    overflow: hidden;
+                }
+            }
+            .pizzaInfo {
+                .leftPizza__info {
+                    width: 250px;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(0,0,0,0.1)
+                    
+                }
+                .rightPizza__info {
+                    width: 250px;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(0,0,0,0.1)
+                }
+
+            }
+        }
+    }
+}
+
+.submitBtn {
+    button {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(0,0,0,.08);
+        border-radius: 15px;
+        background: #f8f8f8;
+        transition: 100ms all;
+        &:hover {
+            background: #fff
+        }
+    }
+    .order__btn {
+        width: 145px;
+        outline: 0;
+        border: 0;
+        background-color: #e31837;
+        border-radius: 15px;
+        height: 50px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0 15px;
+        transition: 150ms all;
+        height: 50px;
+        &:hover {
+            background-color: #bf142e;
+        }
+    }
+}

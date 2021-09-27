@@ -1,4 +1,5 @@
 import React from 'react'
+import CustomPizzaCard from '../components/CustomPizzaCard/CustomPizzaCard'
 import PizzaCard from '../components/PizzaCard'
 import { useQuery } from '../hooks/useQuery'
 import Loader from '../UI/Loader'
@@ -20,6 +21,7 @@ function Home({query, isLoading, cart, pizzas}: Props) {
     return (
         <div className = "container d-flex flex-wrap justify-content-between">
           {isLoading && [...Array(8)].map((item, index) => <Loader key = {index} />)}
+          <CustomPizzaCard />
           {filteredPizzas?.map((pizza: any) => <PizzaCard count = {cart.totalPizzasInCard} key = {pizza.title} {...pizza} />)}
         </div>
     )
