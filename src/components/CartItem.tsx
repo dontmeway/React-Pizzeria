@@ -19,7 +19,7 @@ function CartItem({title, body, type, size, initialPrice, amount, price, id}: an
     return (
         <div className = "cartOrder d-flex p-2 justify-content-around aling-items-center">
             <img width = {200} src = {img} alt = "pizza_image"/>
-            <div className = "w-50">
+            <div className = "w-50 cartOrder__content">
                 <h5>{title}</h5>
                 <p className = "w-75 mb-0">{body}</p>
                 <span className = "type">{sizeTypes[size]}, {categoryTypes[type]}</span>

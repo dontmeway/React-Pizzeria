@@ -56,7 +56,7 @@ const Header = ({totalAmount, totalPrice, cart}: HeaderProps) => {
                             {totalAmount}
                             <i className="bi bi-cart-fill"></i>
                         </div>
-                        {totalPrice && <span style = {{margin: "0 10px", color: "#000000"}}>{totalPrice} грн.</span>}
+                        {totalPrice !== 0 && <span style = {{margin: "0 10px", color: "#000000"}}>{totalPrice} грн.</span>}
                         <Link to = "/cart">
                             <button className = "cart__button">
                                 Корзина

@@ -4,10 +4,25 @@
     height: 80px;
     background-color: #222;  
     display: flex;
+    
     align-items: center;
     position: sticky;
     top: 0;
     color: #f8f8f8;
+    @media (max-width: 535px) {
+        
+    }
+    @media (max-width: 475px) {
+        height: 100%;
+        min-height: 80px;
+        padding: 10px 0;
+        .header__nav {
+            flex-direction: column;
+        }
+        .header__logo {
+            margin-bottom: 10px;;
+        }
+    }
     h3 {
         margin: 0;
     }
@@ -20,11 +35,20 @@
             display: flex;
             align-items: center;
             cursor: pointer;
+            @media (max-width: 530px) {
+                h3 {
+                    font-size: 16px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
             img {
                 margin-right: 10px;
             }
             h3 {
                 text-align: center;
+                
             }
         }
         .cart__button {

@@ -43,7 +43,7 @@ function Cart({cart}: any) {
                                                         type = {item[0].activeType}
                                                         />)}
                 </div>
-                <div className = "w-75 d-flex justify-content-around align-items-center m-auto mt-5">
+                <div className = "cartOrder_buttons w-75 d-flex justify-content-around align-items-center m-auto mt-5">
                     <Link to = "/">
                         <button className = "cart__button back__button">В главную</button>
                     </Link>

@@ -5,7 +5,7 @@ import sliderImg_3 from "../static/images/Manhattan_slider_rus.jpg"
 
 function Swiper() {
     return (
-        <Carousel style = {{height: "400px", overflow: "hidden"}}>
+        <Carousel className = "slider" style = {{height: "400px", overflow: "hidden"}}>
             <Carousel.Item>
                 <img
                 style ={{display: "block"}}

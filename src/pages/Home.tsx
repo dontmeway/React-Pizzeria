@@ -19,7 +19,7 @@ function Home({query, isLoading, cart, pizzas}: Props) {
 
 
     return (
-        <div className = "container d-flex flex-wrap justify-content-between">
+        <div className = "container homePage d-flex flex-wrap">
           {isLoading && [...Array(8)].map((item, index) => <Loader key = {index} />)}
           <CustomPizzaCard />
           {filteredPizzas?.map((pizza: any) => <PizzaCard count = {cart.totalPizzasInCard} key = {pizza.title} {...pizza} />)}
